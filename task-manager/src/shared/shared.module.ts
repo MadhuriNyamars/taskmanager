@@ -14,6 +14,11 @@ import { WidgetComponent } from './components/widget/widget.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    HeaderComponent,
+    SidebarComponent,
+    WidgetComponent
   ]
 })
 export class SharedModule { }

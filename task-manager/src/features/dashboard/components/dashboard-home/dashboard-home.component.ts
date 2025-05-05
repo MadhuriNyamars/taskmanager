@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+// dashboard-home.component.ts
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard-home',
-  templateUrl: './dashboard-home.component.html',
-  styleUrls: ['./dashboard-home.component.css']
+  templateUrl: './dashboard-home.component.html'
 })
-export class DashboardHomeComponent implements OnInit {
+export class DashboardHomeComponent {
+  widgets = [
+    { title: 'Widget A', content: 'Details of A', visible: true },
+    { title: 'Widget B', content: 'Details of B', visible: true }
+  ];
 
-  constructor() { }
-
-  ngOnInit(): void {
+  onMenuChange(item: string) {
+    console.log('Menu selected:', item);
+    // You can add logic to toggle widgets here
   }
-
 }

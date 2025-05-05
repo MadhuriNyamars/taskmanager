@@ -1,1 +1,16 @@
-<p>dashboard-home works!</p>
+<!-- dashboard-home.component.html -->
+<div class="dashboard-layout">
+    <app-sidebar></app-sidebar> <!-- Sidebar -->
+    
+    <div class="main-content">
+      <app-header [title]="'Dashboard Home'"></app-header> <!-- Header -->
+      
+      <!-- Main Content Area (Widgets, etc.) -->
+      <div class="widget-container">
+        <app-widget></app-widget>
+        <app-widget></app-widget>
+        <app-widget></app-widget>
+      </div>
+    </div>
+  </div>
+  
